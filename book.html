@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./book.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="book-container">
+    <div class="header">
+      <h1>Book your appointment now</h1>
+      <p>So our team can reach out to you on time</p>
+    </div>
+    <div class="book-left-column">
+      <div class="input-group">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" placeholder="eg: John Doe">
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="eg: john@email.com">
+      </div>
+      <div class="book-phone-number">
+        <label for="phone-number">Phone Number</label>
+        <select id="phone-code">
+          <option value="+971">+971</option>
+          <option value="+1">+1</option>
+        </select>
+        <input type="tel" id="phone-number" placeholder="543210987">
+      </div>
+    </div>
+    <div class="book-right-column">
+      <div class="available">
+        <label for="options">Available Date</label>
+        <select id="options">
+          <option value="select">Select</option>
+          <option value="option1">option1</option>
+          <option value="option2">option2</option>
+        </select>
+      </div>
+      <div class="text-area">
+        <label for="comments">Share Your Message</label>
+        <textarea id="comments" placeholder="Message"></textarea>
+      </div>
+      <button>Book Now</button>
+    </div>
+  </div>
+</body>
+
+</html>

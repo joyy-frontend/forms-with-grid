@@ -1,0 +1,83 @@
+body {
+  /* font-family: Arial, sans-serif; */
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-form-container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  max-width: 600px;
+  width: 100%;
+  background-color: #3548E4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* padding: 50px; */
+  margin-bottom: 40px;
+  margin-top: 240px;
+  margin-left: 230px;
+}
+
+.team-heading-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  /* 부모 컨테이너의 너비를 전체로 설정 */
+  color: white;
+}
+
+h1,
+.subheading {
+  grid-column: 1 / -1;
+  /* 요소가 그리드의 첫 번째 열부터 마지막 열까지 확장되도록 설정 */
+  text-align: center;
+  /* 텍스트를 가운데 정렬 */
+  margin: 0px;
+  /* 불필요한 여백 제거 */
+  padding: 0;
+  width: 100%;
+}
+
+/*  */
+.contact-form {
+  display: grid;
+  gap: 20px;
+}
+
+.team-form-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.team-form-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form input[type="tel"] {
+  grid-column: 1 / -1;
+}
+
+.connect-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #162AE3;
+  font-size: 16px;
+  cursor: pointer;
+  grid-column: 1 / 2;
+  width: 30%;
+  margin-top: 40px;
+  /* justify-self: start; */
+  align-self: start;
+}

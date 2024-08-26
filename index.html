@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./contact.css">
+  <link rel="stylesheet" href="./book.css">
+  <link rel="stylesheet" href="./job.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 1 -->
+  <div class="team-form-container">
+    <div class="team-heading-container">
+      <h1 class="contact-us">Connect with Our Team</h1>
+      <p class="subheading">Fill the form so that our team can reach out to you</p>
+    </div>
+    <form class="contact-form">
+      <div class="team-form-group">
+        <input type="text" id="name" name="name" class="single-line-input" placeholder="Name">
+        <input type="email" id="email" name="email" class="single-line-input" placeholder="Email">
+      </div>
+      <div class="team-form-group">
+        <input type="tel" id="phone" name="phone" class="single-line-input" placeholder="Phone Number">
+      </div>
+      <button type="submit" class="connect-btn">Submit</button>
+    </form>
+  </div>
+  <br />
+  <!-- 2 -->
+  <div class="contact-container">
+    <!-- 왼쪽 이미지 영역 -->
+    <div class="section image">
+      <img src="./assets/img/coffee.jpg" alt="Profile Image">
+    </div>
+    <!-- 중앙 입력 영역 -->
+    <div class="section contact-form">
+      <h1>Contact Us</h1>
+      <form class="contact-form">
+        <input type="text" placeholder="Full Name" name="full-name">
+        <input type="email" placeholder="E-mail" name="email">
+        <textarea placeholder="Message" name="message"></textarea>
+        <button type="submit" class="btn-submit">Contact Us</button>
+      </form>
+    </div>
+    <!-- 오른쪽 텍스트 영역 -->
+    <div class="section contact-info">
+      <h1>Contact</h1>
+      <p>hi@green.com</p>
+      <h1 id="based">Based in</h1><br>
+      <p>New York,<br>California, Ohio</h1>
+      <div class="bottom-img">
+        <img src="./assets/img/twitter.png" alt="twitter" />
+        <img src="./assets/img/facebook.png" alt="facebook" />
+        <img src="./assets/img/instagram.png" alt="instagram" />
+      </div>
+    </div>
+  </div>
+  <!-- 3 -->
+  <div class="book-container">
+    <div class="header">
+      <h1>Book your appointment now</h1>
+      <p>So our team can reach out to you on time</p>
+    </div>
+    <div class="book-left-column">
+      <div class="input-group">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" placeholder="eg: John Doe">
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="eg: john@email.com">
+      </div>
+      <div class="book-phone-number">
+        <label for="phone-number">Phone Number</label>
+        <select id="phone-code">
+          <option value="+971">+971</option>
+          <option value="+1">+1</option>
+        </select>
+        <input type="tel" id="phone-number" placeholder="543210987">
+      </div>
+    </div>
+    <div class="book-right-column">
+      <div class="available">
+        <label for="options">Available Date</label>
+        <select id="options">
+          <option value="select">Select</option>
+          <option value="option1">option1</option>
+          <option value="option2">option2</option>
+        </select>
+      </div>
+      <div class="text-area">
+        <label for="comments">Share Your Message</label>
+        <textarea id="comments" placeholder="Message"></textarea>
+      </div>
+      <div class="button-arrow">
+        <button>Book Now
+          <img src="./assets/img/arrow.png" alt="arrow" class="arrow-sign">
+        </button>
+      </div>
+
+    </div>
+  </div>
+  <!-- 4 -->
+  <div class="job-container">
+    <div class="job-header">
+      <h1>Job Application ( Web )</h1>
+    </div>
+    <div class="job-form-group">
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" placeholder="Enter First Name">
+    </div>
+    <div class="job-form-group">
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" placeholder="Enter Last Name">
+    </div>
+    <div class="job-form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter First Name">
+    </div>
+
+    <div class="job-form-group">
+      <label for="job-role">Job Role</label>
+      <select id="job-role">
+        <option value="developer" selected>Frontend Developer</option>
+        <option value="designer">Backenc Developer</option>
+        <option value="manager">Full Stack Developer</option>
+      </select>
+    </div>
+    <div class="job-form-group job-full-width">
+      <label for="address">Enter Address</label>
+      <textarea id="address"></textarea>
+    </div>
+    <div class="job-form-group">
+      <label for="city">City</label>
+      <input type="text" id="city" placeholder="Enter City">
+    </div>
+    <div class="job-form-group">
+      <label for="zip">Zip</label>
+      <input type="text" id="zip" placeholder="Enter Zip Code">
+    </div>
+    <div class="job-form-group">
+      <label for="start-date">Start Date</label>
+      <input type="date" id="start-date">
+    </div>
+    <div class="job-form-group">
+      <label for="cv">Upload Your CV</label>
+      <input type="file" id="cv">
+    </div>
+    <button type="submit" class="job-submit-button">Apply Now</button>
+  </div>
+</body>
+
+</html>
